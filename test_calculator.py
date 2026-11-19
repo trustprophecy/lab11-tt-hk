@@ -6,6 +6,17 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
 # Partner 1
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-2, 5), 3)
+
+    def test_subtract(self):
+        self.assertEqual(subtract(10, 4), 6)
+        self.assertEqual(subtract(4, 10), -6)
+
+    def test_exponent(self):
+        self.assertEqual(exp(2, 3), 8)
+        self.assertEqual(exp(5, 0), 1)
     def test_multiply(self):
         self.assertEqual(mul(3, 4), 12)
         self.assertEqual(mul(-2, 5), -10)
