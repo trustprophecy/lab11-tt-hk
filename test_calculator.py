@@ -7,13 +7,13 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
 # Partner 1
     def test_multiply(self):
-        self.assertEqual(multiply(3, 4), 12)
-        self.assertEqual(multiply(-2, 5), -10)
+        self.assertEqual(mul(3, 4), 12)
+        self.assertEqual(mul(-2, 5), -10)
 
     def test_divide(self):
-        self.assertEqual(divide(10, 2), 5)
+        self.assertEqual(div(10, 2), 5)
         with self.assertRaises(ZeroDivisionError):
-            divide(10, 0)
+            div(10, 0)
 
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
