@@ -3,12 +3,9 @@
 import math
 
 def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError("number must be greater than zero and positive")
-        return math.sqrt(a)
-    except ValueError as e:
-        print (f"Error: {e}")
+    if a < 0:
+        raise ValueError("number must be greater than zero and positive")
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
@@ -23,15 +20,15 @@ def mul(a, b):
     return a * b
 
 def div(a, b): 
-    if b == 0:
+    if a == 0:
         raise ZeroDivisionError("cannot divide by zero")
-    return a / b
+    return b / a
 def logarithm(a, b=math.e): 
-    if a <= 0:
+    if b <= 0:
         raise ValueError("number must be greater than zero and positive")
-    if b <= 0 or b == 1:
+    if a <= 0 or a == 1:
         raise ValueError("base must be postive and cannot equal one")
-    return math.log(a, b)
+    return math.log(b, a)
 def exp(a,b):
     return a ** b
 
