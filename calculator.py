@@ -27,14 +27,11 @@ def divide(a, b):
         raise ZeroDivisionError("cannot divide by zero")
     return a / b
 def logarithm(a, b=math.e): 
-    try:
-        if a <= 0:
-            raise ValueError("number must be greater than zero and positive")
-        if b <= 0 or b == 1:
-            raise ValueError("base must be postive and cannot equal one")
-        return math.log(a, b)
-    except ValueError as e:
-        print (f"Error: {e}")
+    if a <= 0:
+        raise ValueError("number must be greater than zero and positive")
+    if b <= 0 or b == 1:
+        raise ValueError("base must be postive and cannot equal one")
+    return math.log(a, b)
 def exponent(a,b):
-    a ** b
+    return a ** b
 
