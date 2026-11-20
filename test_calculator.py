@@ -1,5 +1,6 @@
 # [https://github.com/trustprophecy/lab11-tt-hk](https://github.com/trustprophecy/lab11-tt-hk)
 # Partner 1: Trust Thomas
+# Partner 2: Hamza Khan
 
 import unittest
 from calculator import *
